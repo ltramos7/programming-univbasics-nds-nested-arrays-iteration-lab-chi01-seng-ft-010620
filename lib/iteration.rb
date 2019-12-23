@@ -69,9 +69,18 @@ def total_even_pairs(src)
   # As a reminder any number % 2 will return 0 or 1. If the result is 0, then
   # the number was even. Review the operator documentation if you've forgotten
   # this!
-  
- 
-  
+  i = 0
+  even_sum = 0
+  while array_3[i] do 
+    element_1 = array_3[i][0]
+    element_2 = array_3[i][1]
+
+    if (element_1 % 2 == 0) && (element_2 % 2 == 0)
+      even_sum = element_1 + element_2 + even_sum
+    end
+    i += 1
+  end
+  even_sum
 end
 
 
